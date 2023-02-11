@@ -75,3 +75,35 @@ body{
     padding: 20px;
 }
 
+.task-list-container table{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.task-list-container table th{
+    border-bottom: 1px solid black;
+}
+
+.task-list-container table tr td{
+    line-height: 40px;
+}
+
+.task-btn{
+    background-color: rgb(11, 162, 11);
+    border: none;
+    border-radius: 5px ;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.delete-task-button{
+    background-color: rgb(11, 162, 11);
+    border: none;
+    border-radius: 5px ;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tasks Callendar</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <label for="task-date-input">Task Date: </label></br>
         <input type="date" id="date-input"></br>
         </fieldset>
-        <button type="submit">Save</button>
+        <button type="button" id="save-btn" onclick="task.saveTask()">Save</button>
         <button type="reset">Cancel</button>
     </form>
     <p class="footer">Made by Kaworudesu inspired by Gui-sensei &commat;2023.</p>
@@ -29,10 +30,37 @@
 <!-- task list  -->
 
 <div class="task-list-container">
-   
+   <table>
+    <tr>
+        <th>ID</th>
+        <th>Date</th>
+        <th>Task</th>
+        <th><i class="fa fa-trash-o" style="font-size:20px;color:red"></i> </th>
+    </tr>
+    <tbody id="task-table">
+    
+    </tbody>
+      
+        <!-- <tr class="task-tr">
+           <td>08/09</td>
+           <td>Make an Orange Juicy</td>
+           <td><button class="task-btn" onclick="removeTask()">Done</button></td>
+        </tr>
+        <tr class="task-tr">
+           <td>08/10</td>
+           <td>Work and Relax</td>
+           <td><button class="task-btn" onclick="removeTask()">Done</button></td>
+        </tr>
+        <tr class="task-tr">
+           <td>08/11</td>
+           <td>Reach the OCO</td>
+           <td><button class="task-btn" onclick="removeTask()">Done</button></td>
+        </tr> -->
+     
+    </table>
 </div>
 
 
-<script src="script.js"></script>
+<script src="script-02.js"></script>
 </body>
 </html>
